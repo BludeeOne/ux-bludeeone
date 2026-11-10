@@ -49,7 +49,7 @@ I don't want to make it sound like the entire experience has been negative. Once
 
 This is where the guide starts to shine. The chapters do a good job introducing concepts in manageable pieces, ideas are kept within their general chapter and they state and if they will expound on more a complex task later. 
 
-![My game window after experimenting with texture settings]({{ '/assets/images/game-window-experiment.png' | relative_url }})
+![MonoGame texture tutorial example]({{ '/assets/images/texture-tutorial-example.png' | relative_url }})
 *Figure 4. The guide demonstrates drawing a texture in the game window.*
 
 The `SpriteBatch.Draw()` method is a good example. It has several parameters that control how a texture appears, and the tutorial explains what those options do. Being able to experiment with position, rotation, scale, and color makes the material easier to understand. Especially since these settings apply to every single thing thats going to appear on screen. 
@@ -59,7 +59,7 @@ The `SpriteBatch.Draw()` method is a good example. It has several parameters tha
 
 I started experimenting with the settings myself and ended up with the logo rotated vertically and pushed toward the bottom-left corner of the window. It wasn't what I expected, but unlike the installation problems, this was actually fun to figure out. See everything is given a predetermined origin. So even though you might want to position in the center, its the center of the origin, which could be anywhere. Important to be explicit with your sprites. 
 
-![MonoGame texture tutorial example]({{ '/assets/images/texture-tutorial-example.png' | relative_url }})
+![My game window after experimenting with texture settings]({{ '/assets/images/game-window-experiment.png' | relative_url }})
 *Figure 6. An unexpected result while I was experimenting with texture positioning and rotation.*
 
 This is a good example of **feedback**. In UX, feedback is the information a system gives after someone takes an action. I could change a value, run the game, and immediately see what happened. Even when the result wasn't what I wanted, I had something visible to learn from.
