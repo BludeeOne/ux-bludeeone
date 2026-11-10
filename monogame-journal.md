@@ -4,7 +4,7 @@ title: "Learning MonoGame: Intro of Doom"
 permalink: /journal/monogame/
 ---
 
-# Learning MonoGame: When Getting Started Becomes the Hardest Part
+# Learning MonoGame: Intro of Doom
 
 *My experience learning game development through the official MonoGame Building 2D Games guide.*
 
@@ -16,35 +16,32 @@ Unfortunately, that wasn't quite how things went.
 
 One of the first things I ran into was the guide's setup instructions for macOS. The instructions had me install an Intel version of the .NET tooling and use Rosetta, even though my Mac uses Apple Silicon. It claims that the tutorial isn't fully up to date, and still runs on the intel version but they're working on it. However, since I was following the official guide, I assumed that they knew what they were doing and everything would still be smooth. Boy was I wrong. 
 
-What was supposed to be a straightforward installation turned into a long tediuous back and forth. I had to uninstall extensions, clear out old configuration information, and rework paths just to get things running properly. Some of the other tools the guide recommended installing also caused problems, and I ended up removing those too!
+What was supposed to be a straightforward installation turned into a long tedious back and forth. I had to uninstall extensions, clear out old configuration information, and rework paths just to get things running properly. Some of the other tools the guide recommended installing also caused problems, and I ended up removing those too!
 
-![MonoGame setup instructions for macOS](assets/images/macos-setup-instructions.png)
-
+![MonoGame setup instructions]({{ '/assets/images/macos-setup-instructions.png' | relative_url }})
 *Figure 1. The guide's macOS setup instructions were where my installation problems began.*
 
-This was the first point where my **mental model** didn't match what actually happened. A mental model is the expectation someone has about how a system will work, and I expected this system to be starightforward and streamlined. It was far from it. 
+This was the first point where my **mental model** didn't match what actually happened. A mental model is the expectation someone has about how a system will work, and I expected this system to be straightforward and streamlined. It was far from it. 
 
 ## Starting over on Windows
 
-Eventually, I switched to my Windows desktop. I thought starting fresh on another machine might be easier, especially since most of my issues were stemming from the fact that I was on MacOs. Unfortunately, I had never really done development on that computer before. I had to install VS Code, clear space on my computer, create a new enviroment, download all new dependencies, basically start from scratch once again. 
+Eventually, I switched to my Windows desktop. I thought starting fresh on another machine might be easier, especially since most of my issues were stemming from the fact that I was on macOs. Unfortunately, I had never really done development on that computer before. I had to install VS Code, clear space on my computer, create a new environment, download all new dependencies, basically start from scratch once again. 
 
-At that point, I was learning two things at once: MonoGame AND how to maintain a development environment on two different operating systems. I was switching between computers, checking which tools were installed, figuring out paths, and googling errors that the guide didn't anticipate.
+At that point, I was learning two things at once: MonoGame AND how to maintain a development environment on two different operating systems. I was switching between computers, checking which tools were installed, figuring out paths, and Googling errors that the guide didn't anticipate.
 
 I also ended up relying on the .NET command-line tools for much of the work because I couldn't get the VS Code integration working the way I expected. The command line became the most reliable way to keep moving forward.
 
-![MonoGame setup follow-up](assets/images/macos-setup-followup.png)
-
+![MonoGame setup follow-up]({{ '/assets/images/macos-setup-followup.png' | relative_url }})
 *Figure 2. More of the setup process and the configuration steps I had to work through.*
 
 The documentation does offer different workflows for some tasks, which I appreciated. For example, the Content Pipeline section gives options for VS Code, Visual Studio, and the .NET CLI. Having alternatives is useful, especially when one workflow isn't cooperating.
 
-![MonoGame Content Pipeline and editor options](assets/images/windows-environment-setup.png)
-
+![MonoGame Content Pipeline and editor options]({{ '/assets/images/windows-environment-setup.png' | relative_url }})
 *Figure 3. The guide presents different ways to work with the Content Pipeline.*
 
 This connects to **error recovery**, or how easily someone can get back on track after something goes wrong. Having another way to complete a task helped me continue, but I still had to figure out which option would work with my setup.
 
-The process also added a lot of **cognitive load**. The mental effort required to keep track of what I had done on wich system, and which would be easier to learn whatever concept it was currently on. The guide helped me understand what to install, but it didn't always help me understand what to do when the directions didn't work.
+The process also added a lot of **cognitive load**. The mental effort required to keep track of what I had done on which system, and which would be easier to learn whatever concept it was currently on was seriously a lot. The guide helped me understand what to install, but it didn't always help me understand what to do when the directions didn't work.
 
 ## When things finally started working
 
@@ -52,20 +49,17 @@ I don't want to make it sound like the entire experience has been negative. Once
 
 This is where the guide starts to shine. The chapters do a good job introducing concepts in manageable pieces, ideas are kept within their general chapter and they state and if they will expound on more a complex task later. 
 
-![MonoGame texture tutorial example](assets/images/texture-tutorial-example.png)
-
+![MonoGame texture tutorial example]({{ '/assets/images/texture-tutorial-example.png' | relative_url }})
 *Figure 4. The guide demonstrates drawing a texture in the game window.*
 
-The `SpriteBatch.Draw()` method is a good example. It has several parameters that control how a texture appears, and the tutorial explains what those options do. Being able to experiment with position, rotation, scale, and color makes the material easier to understand. Especially since these settings apply to everything single thing thats going to appear on screen. 
+The `SpriteBatch.Draw()` method is a good example. It has several parameters that control how a texture appears, and the tutorial explains what those options do. Being able to experiment with position, rotation, scale, and color makes the material easier to understand. Especially since these settings apply to every single thing thats going to appear on screen. 
 
-![SpriteBatch Draw code example](assets/images/spritebatch-code.png)
-
+![SpriteBatch Draw code example]({{ '/assets/images/spritebatch-code.png' | relative_url }})
 *Figure 5. The SpriteBatch.Draw method exposes several options for controlling how a texture is rendered.*
 
-I started experimenting with the settings myself and ended up with the logo rotated vertically and pushed toward the bottom-left corner of the window. It wasn't what I expected, but unlike the installation problems, this was actually fun to figure out. See everything is given a predetermined origin. So even though you might what to print in the center, its the center of the origin, which could be anywhere. Important to be explicit with your sprites. 
+I started experimenting with the settings myself and ended up with the logo rotated vertically and pushed toward the bottom-left corner of the window. It wasn't what I expected, but unlike the installation problems, this was actually fun to figure out. See everything is given a predetermined origin. So even though you might want to position in the center, its the center of the origin, which could be anywhere. Important to be explicit with your sprites. 
 
-![My game window after experimenting with texture settings](assets/images/game-window-experiment.png)
-
+![My game window after experimenting with texture settings]({{ '/assets/images/game-window-experiment.png' | relative_url }})
 *Figure 6. An unexpected result while I was experimenting with texture positioning and rotation.*
 
 This is a good example of **feedback**. In UX, feedback is the information a system gives after someone takes an action. I could change a value, run the game, and immediately see what happened. Even when the result wasn't what I wanted, I had something visible to learn from.
