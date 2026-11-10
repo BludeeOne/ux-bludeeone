@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Learning MonoGame: When Getting Started Becomes the Hardest Part"
+title: "Learning MonoGame: Intro of Doom"
+permalink: /journal/monogame/
 ---
 
 # Learning MonoGame: When Getting Started Becomes the Hardest Part
