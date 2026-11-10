@@ -36,7 +36,7 @@ I also ended up relying on the .NET command-line tools for much of the work beca
 
 The documentation does offer different workflows for some tasks, which I appreciated. For example, the Content Pipeline section gives options for VS Code, Visual Studio, and the .NET CLI. Having alternatives is useful, especially when one workflow isn't cooperating.
 
-![MonoGame Content Pipeline and editor options]({{ '/assets/images/windows-environment-setup.png' | relative_url }})
+![MonoGame Content Pipeline and editor options]({{ '/assets/images/windows-enviroment-setup.png' | relative_url }})
 *Figure 3. The guide presents different ways to work with the Content Pipeline.*
 
 This connects to **error recovery**, or how easily someone can get back on track after something goes wrong. Having another way to complete a task helped me continue, but I still had to figure out which option would work with my setup.
@@ -49,7 +49,7 @@ I don't want to make it sound like the entire experience has been negative. Once
 
 This is where the guide starts to shine. The chapters do a good job introducing concepts in manageable pieces, ideas are kept within their general chapter and they state and if they will expound on more a complex task later. 
 
-![MonoGame texture tutorial example]({{ '/assets/images/texture-tutorial-example.png' | relative_url }})
+![MonoGame texture tutorial example]({{ '/assets/images/windows-enivroment-experiment' | relative_url }})
 *Figure 4. The guide demonstrates drawing a texture in the game window.*
 
 The `SpriteBatch.Draw()` method is a good example. It has several parameters that control how a texture appears, and the tutorial explains what those options do. Being able to experiment with position, rotation, scale, and color makes the material easier to understand. Especially since these settings apply to every single thing thats going to appear on screen. 
